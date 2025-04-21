@@ -3,6 +3,10 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "chapter-7"
+name = "groupsandsets"
 version = "0.1"
 dependencies = ["numpy"]
+
+[tool.hatch.build]
+# Include both packages (groups and sets)
+packages = ["groups", "sets"]
